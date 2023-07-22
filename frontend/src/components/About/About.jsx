@@ -11,21 +11,21 @@ const About = ({about}) => {
       <div className="aboutContainer">
 
     <Typography>
-        {about.quote}
+        {about?.quote}
     </Typography>
 
       </div>
       <div className="aboutContainer2">
         <div>
-            <img src={about.avatar.url} alt="Arnab" className='aboutAvatar' />
+            <img src={about?.avatar.url} alt="Arnab" className='aboutAvatar' />
             <Typography variant='h4'>
-              {about.name}
+              {about?.name}
             </Typography>
             <Typography>
-                {about.title}
+                {about?.title}
             </Typography>
             <Typography>
-                {about.subtitle}
+                {about?.subtitle}
             </Typography>
         </div>
         <div>
@@ -35,7 +35,7 @@ const About = ({about}) => {
                 letterSpacing: "5px",
                 textAlign: "right"
             }}>
-                {about.description}
+                {about?.description}
             </Typography>
         </div>
       </div>

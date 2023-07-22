@@ -82,27 +82,27 @@ const Home = ({timelines , skills}) => {
 
         <div className="homeCubeSkills">
           <div className="homeCubeSkillsFaces homeCubeSkillsFace1">
-            <img src={skills.image1.url} alt="Face 1" />
+            <img src={skills?.image1.url} alt="Face 1" />
           </div>
 
           <div className="homeCubeSkillsFaces homeCubeSkillsFace2">
-            <img src={skills.image2.url} alt="Face 2" />
+            <img src={skills?.image2.url} alt="Face 2" />
           </div>
           
           <div className="homeCubeSkillsFaces homeCubeSkillsFace3">
-            <img src={skills.image3.url} alt="Face 3" />
+            <img src={skills?.image3.url} alt="Face 3" />
           </div>
           
           <div className="homeCubeSkillsFaces homeCubeSkillsFace4">
-            <img src={skills.image4.url} alt="Face 4" />
+            <img src={skills?.image4.url} alt="Face 4" />
           </div>
           
           <div className="homeCubeSkillsFaces homeCubeSkillsFace5">
-            <img src={skills.image5.url} alt="Face 5" />
+            <img src={skills?.image5.url} alt="Face 5" />
           </div>
           
           <div className="homeCubeSkillsFaces homeCubeSkillsFace6">
-            <img src={skills.image6.url} alt="Face 6" />
+            <img src={skills?.image6.url} alt="Face 6" />
           </div>
         </div>
 

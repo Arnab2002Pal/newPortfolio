@@ -38,26 +38,29 @@ function App() {
   //add proxy at server 4000 since our server is running on 4000
   
 
-  return <Router>
-    {loading ? <Loader/> : (
-    <>
-    <Header/>
-    <Routes>
-      <Route path='/' element={<Home timelines={user.timeline} skills={user.skills}/>} />
+  return(
+    <Router>
+      {loading ? <Loader/> : (
+        <>
+          <Header/>
+          <Routes>
+      <Route path='/' element={<Home timelines={user?.timeline} skills={user?.skills} />} />
 
-      <Route path='/about' element={<About about={user.about}/>} />
 
-      <Route path='/projects' element={<Projects projects={user.projects}/>} />
+      <Route path='/about' element={<About about={user?.about}/>} />
+
+      <Route path='/projects' element={<Projects projects={user?.projects}/>} />
       <Route path='/contact' element={<Contact/>} />
       
       <Route path='/account' element={isAuthenticated ? <AdminPanel /> : <Login/>} />
       <Route path='/admin/timeline' element={isAuthenticated ? <Timeline /> : <Login/>} />
       <Route path='/admin/project' element={isAuthenticated ? <Project /> : <Login/>} />
     </Routes>
-  <Footer/>
-  </>
-  )}
-  </Router>
+          <Footer/>
+        </>
+      )}
+    </Router>
+  );
 }
 
 export default App;
